@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, VStack, HStack, Box, Text, Stat, StatLabel, StatNumber, StatHelpText, StatArrow, SimpleGrid, IconButton } from "@chakra-ui/react";
+import { Container, VStack, HStack, Box, Text, Stat, StatLabel, StatNumber, StatHelpText, StatArrow, SimpleGrid, IconButton, Heading } from "@chakra-ui/react";
+import ChartSet from "../components/ChartSet.jsx";
 import { FaChartLine, FaDollarSign, FaUsers, FaShoppingCart } from "react-icons/fa";
 
 const Index = () => {
@@ -22,6 +23,20 @@ const Index = () => {
           <StatCard title="NN" value="100" change="0%" icon={<FaChartLine />} color="teal.500" />
           <StatCard title="Total" value="1,500" change="+3%" icon={<FaChartLine />} color="gray.500" />
         </SimpleGrid>
+        <Heading as="h2" size="lg" mt={10}>
+          Leads by Buyers
+        </Heading>
+        <ChartSet title="Leads by Buyers" />
+
+        <Heading as="h2" size="lg" mt={10}>
+          Leads by Landings
+        </Heading>
+        <ChartSet title="Leads by Landings" />
+
+        <Heading as="h2" size="lg" mt={10}>
+          Leads by Partner
+        </Heading>
+        <ChartSet title="Leads by Partner" />
       </VStack>
     </Container>
   );
