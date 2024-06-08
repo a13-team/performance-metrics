@@ -15,6 +15,12 @@ const Index = () => {
           <StatCard title="Revenue" value="$34,000" change="+10%" icon={<FaDollarSign />} color="blue.500" />
           <StatCard title="Customers" value="300" change="-2%" icon={<FaUsers />} color="red.500" />
           <StatCard title="Growth" value="15%" change="+3%" icon={<FaChartLine />} color="purple.500" />
+          <StatCard title="RU" value="500" change="+2%" icon={<FaChartLine />} color="orange.500" />
+          <StatCard title="RUEU" value="300" change="+1%" icon={<FaChartLine />} color="yellow.500" />
+          <StatCard title="AR" value="200" change="-1%" icon={<FaChartLine />} color="pink.500" />
+          <StatCard title="EN" value="400" change="+4%" icon={<FaChartLine />} color="cyan.500" />
+          <StatCard title="NN" value="100" change="0%" icon={<FaChartLine />} color="teal.500" />
+          <StatCard title="Total" value="1,500" change="+3%" icon={<FaChartLine />} color="gray.500" />
         </SimpleGrid>
       </VStack>
     </Container>
